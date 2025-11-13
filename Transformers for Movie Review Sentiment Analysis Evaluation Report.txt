@@ -1,0 +1,54 @@
+
+==================================================================
+Transformers for Movie Review Sentiment Analysis Evaluation Report
+==================================================================
+
+Report Generated: 2025-11-13 16:16:15
+
+Dataset Summary:
+------------------------------------------------------------------
+Total samples: 50000
+Training samples: 30000
+Testing samples: 20000
+K-Folds: 3
+Epochs per fold: 3
+Batch size: 16
+Max Token Length: 128
+
+Model Configuration:
+------------------------------------------------------------------
+Model: BERT-base-uncased
+Optimizer: AdamW
+Learning Rate: 2e-05
+Scheduler: Linear Warmup
+Loss Function: CrossEntropyLoss
+Device Used: cuda
+
+Final Test Performance:
+------------------------------------------------------------------
+Test Accuracy  : 0.8955
+Precision       : 0.8853
+Recall          : 0.9088
+F1-Score        : 0.8969
+ROC-AUC         : 0.9603
+
+Confusion Matrix:
+------------------------------------------------------------------
+TN = 8823   FP = 1177
+FN = 912   TP = 9088
+
+Classification Report:
+------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.91      0.88      0.89     10000
+           1       0.89      0.91      0.90     10000
+
+    accuracy                           0.90     20000
+   macro avg       0.90      0.90      0.90     20000
+weighted avg       0.90      0.90      0.90     20000
+
+
+==================================================================
+End of Report
+==================================================================
